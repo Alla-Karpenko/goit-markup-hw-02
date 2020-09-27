@@ -1,6 +1,10 @@
-:root{
+  :root {
     --accent-color: #2196F3;
-  
+    --title-color:  #212121;
+    --subtitle-color:  #757575; 
+    --main font: "Roboto", sans-serif;
+    --secondary font: "Raleway", sans-serif;
+    
   }
   body {
     font-family: "Roboto", sans-serif;
@@ -18,19 +22,32 @@
   .address {
     font-style: normal;
   }
-  
+  /*======== HEADER======*/
   .header-logo {
-  font-weight: bold;
+  font-family: Raleway;
+  font-style: normal;  
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.192px;
   letter-spacing: 0.03em;
   color: var(--accent-color);
   } 
+
+  .accent {
+    color:  #000000;
+  }
   
+  .footer-accent {
+   color: #ffffff;
+  }
+
   .footer-logo {
-  font-weight: bold;
+  font-family: Raleway;
+  font-style: normal;  
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.192px;
+  /* identical to box height */
   letter-spacing: 0.03em;
   color: var(--accent-color);
   }
@@ -52,7 +69,7 @@
   line-height: 1.167px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-color);
   }
   .services-title {
     font-weight: 700;
@@ -60,7 +77,7 @@
     line-height: 1.143px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--title-color);
   }
 
   .services-subtitle  {
@@ -68,7 +85,7 @@
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--subtitle-color);
   }
 
   .section-command {
@@ -77,7 +94,7 @@
    line-height: 1.167px;
    text-align: center;
    letter-spacing: 0.03em;
-   color: #212121; 
+   color: var(--title-color); 
   }
 
   .navigation-list-link {
@@ -85,7 +102,7 @@
     font-size: 14px;
     line-height: 1.143px;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--title-color);
   }
   
   .header-mail-link,
@@ -94,7 +111,7 @@
     font-size: 14px;
     line-height: 1.143px;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--subtitle-color);
   }
   .navigation-list-link:hover,
   .navigation-list-link:focus {
@@ -117,7 +134,7 @@
   
   .header-portfolio-mail-link,
   .header-portfolio-tel-link {
-    color:  #757575;
+    color:  var(--subtitle-color);
   }
   
    /*button*/
@@ -130,6 +147,19 @@
     
   }
 
+  .button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+ 
+  }
   
   .button { 
      color: #ffffff;
@@ -157,4 +187,21 @@
   color: #ffffff;
   }
   
+  .title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2px;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.06em; 
+    color: var(--title-color);
+    
+  }
   
+  .subtitle {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.875px;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.03em;
+  color: var(--subtitle-color);
+  }
